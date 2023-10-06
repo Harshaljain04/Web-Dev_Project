@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+    --primary-color: blue;
+  }
+  
+
+body {
+  background-color: #f1f3f8;
+ 
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.mapdiv svg {
+
+  margin-left: 80px;
+}
+
+#name {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  opacity: 0;
+  border-radius: 5px;
+  border: 3px solid rgb(245, 128, 128);
+  padding: 0px 5px;
+  font-size: 1.5rem;
+}
+
+
+.svg-path {
+  
+  fill: var(--primary-color);
+  stroke-width: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+svg path {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+:root {
+  --primary-color: blue;
+}
+
+

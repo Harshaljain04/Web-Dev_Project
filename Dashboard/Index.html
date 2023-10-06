@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>AQI & WQI</title>
+
+  <!-- Lato Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="grid-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <h3><span class="material-icons-outlined">clouds</span> Predictometer</h3>
+      </div>
+      <!-- <div class="header-left">
+        <ul class="list">
+          <li class="list-item">
+            <a href="#">
+              <span class="material-icons-outlined">dashboard</span> DASHBOARD
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <span class="material-icons-outlined">inventory_2</span> PRODUCTS
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <span class="material-icons-outlined">person</span>
+             Personalize
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <span class="material-icons-outlined">settings</span> SETTINGS
+            </a>
+          </li>
+        </ul>
+      </div> -->
+      <p>Latitude: <span id="latitude"></span></p>
+      <p>Longitude: <span id="longitude"></span></p>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main class="main-container">
+      <div class="main-cards">
+
+        <div class="card">
+          <div class="card-inner">
+            <p>AQI</p>
+            <div class="icon icon-shape background-blue text-primary">
+              <span class="material-icons-outlined">air</span>
+            </div>
+          </div>
+          <span class="subtext"> --</span>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <p>WQI</p>
+            <div class="icon icon-shape background-orange text-primary">
+              <span class="material-icons-outlined">water_drop</span>
+            </div>
+          </div>
+          <span class="subtext"> -- </span>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <p>Prediction</p>
+            <div class="icon icon-shape background-green text-primary">
+              <span class="material-icons-outlined">query_stats</span>
+            </div>
+          </div>
+          <span class="subtext">--</span>
+          <span class="subtext">--</span>
+        </div>
+        <!-- 
+          <div class="card">
+            <div class="card-inner">
+              <p>ALERTS</p>
+              <div class="icon icon-shape background-red text-primary">
+                <span class="material-icons-outlined">notification_important</span>
+              </div>
+            </div>
+            <span class="text-primary">56</span>
+          </div> -->
+
+      </div>
+
+      <div class="charts">
+
+        <div class="charts-card">
+          <p class="chart-title">AIR WATER AND PREDICTION</p>
+          <!-- <div id="bar-chart"></div> -->
+          <div class="area-chart" id="area-chart"></div>
+          
+        </div>
+
+        <div class="charts-card">
+          <p class="chart-title" >MAP</p>
+          <!-- <div class="area-chart" id="area-chart"></div> -->
+          <div class="map"><iframe id="myFrame" src="./map/test.html" scrolling="no"></iframe></div>
+        
+        </div>
+
+        <div class="charts-card">
+          <p class="chart-title ">AQI CONSTITUENTS</p>
+          <!-- <div id="bar-chart"></div> -->
+          <div class="pie-chart" id="pie-chart-AQI"></div>
+          
+        </div>
+
+        <div class="charts-card">
+          <p class="chart-title">WQI CONSTITUENTS</p>
+          <!-- <div id="bar-chart"></div> -->
+          <div class="pie-chart" id="pie-chart-WQI"></div>
+          
+        </div>
+
+      </div>
+    </main>
+    <!-- End Main -->
+  </div>
+
+  <!-- ApexCharts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.40.0/apexcharts.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
